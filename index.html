@@ -121,10 +121,16 @@
                 <fieldset title="Personal details" id="personal" class="field ">
                     <legend>RSVP</legend>
 
-                    <div class="input-div">
-                        <label for="first-name">Name</label>
-                        <input type="text" name="first-name" id="first-name" title="Your Name"
-                            placeholder="Your Name & Surname" minlength="2" required>
+                    <div class="input-div flex-div">
+                        <label for="first-name">Name & Surname</label>
+
+                        <input class="flex-input" type="text" name="First-name" id="first-name" title="Your Name"
+                            placeholder="First Name" minlength="2" required>
+                        <div class="flex-container">
+                            </div>
+                            <input class="flex-input" type="text" name="surname-name" id="surname-name" title="Surname"
+                            placeholder="Last Name" minlength="2" required>
+
                     </div>
 
                     <div class="input-div">

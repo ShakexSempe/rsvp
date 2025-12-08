@@ -703,14 +703,6 @@ form .input-div ::placeholder {
   opacity: 0.5;
 }
 
-form .input-div.services input {
-  margin: 0.5em 0;
-}
-
-form .input-div:hover label {
-  transform: translateY(-0.25em) translateX(0.5rem);
-}
-
 form #submit-btn {
   display: flex;
   align-items: center;
