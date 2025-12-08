@@ -771,15 +771,12 @@ form #submit-btn:active .icon {
   isolation: isolate;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "image-1 image-2" " content content ";
 }
 
 @media (min-width: 768px) {
   .hero {
     height: 90vh;
-    padding: 30vh 5vw 0;
     padding: 10vh 5vw 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -791,51 +788,8 @@ form #submit-btn:active .icon {
 }
 @media (min-width: 1024px) {
   .hero {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: 25% auto 25%;
-    grid-template-columns: auto 50% auto;
+    padding: 15vh 0;
     grid-template-areas: "image-1 content image-2" "image-1 content image-2 ";
-  }
-}
-.hero.about-hero {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "image-1" "content";
-}
-
-.hero.about-hero .hero-img-1 {
-  border-right: none;
-  border-bottom: 2px solid #d16033;
-}
-
-@media (min-width: 768px) {
-  .hero.about-hero .hero-img-1 {
-    display: block;
-  }
-}
-.hero.about-hero .hero-img-1 img {
-  height: 100%;
-  width: 100%;
-  object-position: center top;
-  max-width: 600px;
-  margin-inline: auto;
-}
-
-.hero.about-hero .hero-img-2 {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .hero.about-hero .hero-img-2 {
-    display: block;
-  }
-}
-@media (min-width: 768px) {
-  .hero.about-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "image-1 image-2" " content content ";
   }
 }
 .hero-img {
@@ -845,6 +799,8 @@ form #submit-btn:active .icon {
 .hero-img img {
   height: 100%;
   width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
   object-fit: cover;
   object-position: center;
 }
@@ -870,11 +826,7 @@ form #submit-btn:active .icon {
 }
 
 .hero-content {
-  grid-area: content;
-  background-color: #c3c3b1;
   padding: 5vh 5vw 5vh;
-  text-align: center;
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {

@@ -18,15 +18,17 @@
     text-align: center;
 
     display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;  
-        grid-template-areas: 'image-1 image-2' 
-                                ' content content ';
+    grid-template-rows: 1fr 1fr;
+    // gap: 5vh;
+        // grid-template-columns: 1fr;
+        
+        // grid-template-areas: 'image-1 image-2' 
+        //                         ' content content ';
 
     @include abstracts.md {
         height: 90vh;
-        padding: 30vh 5vw 0;
         padding: 10vh 5vw 5vh;
+        // padding: 10vh 5vw 5vh;
         // border: 2px solid red;/
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -45,60 +47,15 @@
     }
 
     @include abstracts.xlg {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-columns: 25% auto 25%;
-        grid-template-columns: auto 50% auto;
+        padding: 15vh 0;
+        // grid-template-columns: repeat(3, 1fr);
+        // grid-template-columns: 25% auto 25%;
+        // grid-template-columns: auto 50% auto;
         grid-template-areas: 'image-1 content image-2'
                                 'image-1 content image-2 ';
     } 
 
 
-    &.about-hero {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 'image-1' 'content';
-
-        .hero-img-1 {
-            border-right: none;
-            border-bottom: 2px solid abstracts.$text-link;
-            // margin-inline: auto;
-
-            @include abstracts.md {
-                    display: block;
-                    // margin-inline: 0;
-                }
-
-            img {
-                height: 100%;
-                width: 100%;
-                object-position: center top;
-                max-width: 600px;
-                margin-inline: auto;
-            }
-            
-        }
-
-        .hero-img-2 {
-            display: none;
-            @include abstracts.md {
-                display: block;
-            }
-
-        }
-        
-        @include abstracts.md {
-            // grid-template-areas: 'image-';
-            display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 'image-1 image-2'
-                                ' content content ';
-            // .hero-img {
-            //     border: 3px solid red;
-            //     // width: 700px;
-            // }
-        }
-    }
 }
 
 
@@ -109,6 +66,8 @@
     img {
         height: 100%;
         width: 100%;
+        max-width: 500px;
+        margin-inline: auto;
         object-fit: cover;
         object-position: center;
     }
@@ -161,11 +120,11 @@
 
 
 .hero-content {
-    grid-area: content;
-    background-color: abstracts.$background-main;
+    // grid-area: content;
+    // background-color: abstracts.$background-main;
     padding: 5vh 5vw 5vh;
-    text-align: center;
-    overflow: hidden;
+    // text-align: center;
+    // overflow: hidden;
 
     @include abstracts.md {
         top: unset;
