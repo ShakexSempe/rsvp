@@ -794,6 +794,8 @@ form #submit-btn:active .icon {
 }
 .hero-img {
   overflow: hidden;
+  box-shadow: 0 0.5rem 1rem black;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .hero-img img {
@@ -807,6 +809,7 @@ form #submit-btn:active .icon {
 
 @media (min-width: 820px) {
   .hero-img {
+    box-shadow: none;
     border: none;
     border-radius: 0.25rem;
     max-height: 500px;
