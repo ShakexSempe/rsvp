@@ -48,15 +48,24 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.25rem;
         }
 
-        
-        
+
         .icon {
             // border: 1px solid red;
             display: inline;
         }
+
+        &:hover {
+            a {
+                text-decoration-color: abstracts.$text-link;
+                text-underline-offset: 0;
+                color: abstracts.$text-link-light;
+            }
+
+        }
+
     }
 
     .copyright {
@@ -75,7 +84,9 @@ footer {
 
     a {
         color: abstracts.$text-link;
-        text-decoration: none;
+        text-decoration-color: transparent;
         position: relative;
+        transition: 250ms ease;
+        text-underline-offset: 6px;
     }
 }
