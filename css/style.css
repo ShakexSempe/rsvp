@@ -343,9 +343,8 @@ footer a {
   font-size: clamp(.95rem, 1.5vw, 1rem);
   width: max-content;
   padding: 0.125rem 0.5rem;
-  color: #f4f4f4;
+  color: #f2ead9;
   background: #4e4831;
-  border: 1px solid;
   border-radius: 0.25rem;
   cursor: default;
   transition: 200ms;
