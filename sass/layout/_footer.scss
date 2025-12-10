@@ -43,12 +43,23 @@ footer {
             border-bottom: 1px solid abstracts.$background-main;
         }
 
-        ul > li , p {
-            // border: 1px solid red;
+        ul > li {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 0.25rem;
+        }
+
+        .contact-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            
+            p {
+                font-weight: 600;
+            }
         }
 
 
@@ -58,6 +69,13 @@ footer {
         }
 
         &:hover {
+
+            .contact-name {
+                .icon {
+                    opacity: .5;
+                }
+            }
+
             a {
                 text-decoration-color: abstracts.$text-link;
                 text-underline-offset: 0;
