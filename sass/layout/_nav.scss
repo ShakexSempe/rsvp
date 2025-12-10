@@ -238,7 +238,7 @@
     font-size: abstracts.$font-clamp-xsm;
     text-decoration-color: transparent;
     text-underline-offset: 5px;  
-    transition: 150ms;
+    transition: 250ms ease;
     cursor: default;
 
     @include abstracts.lg {

@@ -522,7 +522,7 @@ footer a {
   font-size: clamp(.95rem, 1.5vw, 1rem);
   text-decoration-color: transparent;
   text-underline-offset: 5px;
-  transition: 150ms;
+  transition: 250ms ease;
   cursor: default;
 }
 
