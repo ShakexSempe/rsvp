@@ -523,10 +523,16 @@ footer a {
   text-decoration-color: transparent;
   text-underline-offset: 5px;
   transition: 150ms;
+  cursor: default;
 }
 
+@media (min-width: 820px) {
+  .details {
+    cursor: pointer;
+  }
+}
 .details:hover {
-  text-decoration-color: inherit;
+  text-decoration-color: #d16033;
   text-underline-offset: 2px;
 }
 
@@ -811,7 +817,7 @@ form #submit-btn:active .icon {
 .hero-img {
   overflow: hidden;
   box-shadow: 0 0.5rem 1rem black;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .hero-img img {
